@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .event-paid {
+    @apply bg-blue-500 text-white;
+  }
+  .event-unpaid {
+    background: repeating-linear-gradient(
+      -45deg,
+      #ffec99,
+      #ffec99 10px,
+      #a5d8ff 10px,
+      #a5d8ff 20px
+    );
+  }
+  .event-vip {
+    @apply bg-green-500 text-white border-dotted border-2 border-green-700;
+  }
+  .event-conflicted {
+    @apply border-red-500 border-2;
+  }
+}
